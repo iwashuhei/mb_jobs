@@ -37,9 +37,17 @@
     │   ├── Route.js  
     │   └── index.js  
     └── registerServiceWorker.js  
-    
+
 
 ---
+## 手順
+
+1. git clone
+1. node.jsをインストール（パス通したかも）
+1. $ npm install
+1. $ npm start
+---
+
 # 以下デフォルト
 
 
