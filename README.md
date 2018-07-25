@@ -1,3 +1,51 @@
+
+# React Redux デモプロジェクト
+勉強会用のデモ
+---
+## 概要  
+
+サーバーとのアクセスとレンダリングを見るためのデモプロジェクトです。  
+無駄なコーディングやハードコートが多いかもしれません。  
+
+---
+## 構成
+
+├── README.md  kore  
+├── package-lock.json   依存関係  
+├── package.json  
+├── public  
+│   ├── favicon.ico  
+│   ├── index.html  
+│   └── manifest.json  
+└── src  
+    ├── App.css  
+    ├── App.js  
+    ├── App.test.js  
+    ├── actions  
+    │   └── Jobs.js  
+    ├── components  
+    │   ├── Dakoku.js  
+    │   └── Jobs.js  
+    ├── containers  
+    │   └── Jobs.js  
+    ├── createStore.js  
+    ├── index.css  
+    ├── index.js  
+    ├── logo.svg  
+    ├── reducers  
+    │   ├── Jobs.js  
+    │   ├── Route.js  
+    │   └── index.js  
+    └── registerServiceWorker.js  
+    
+
+---
+# 以下デフォルト
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
