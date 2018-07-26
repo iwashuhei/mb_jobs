@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Alert} from 'react-bootstrap';
+import {Alert,Table} from 'react-bootstrap';
 
 // export default function Jobs({id,year,month}){
 export default class Jobs extends React.Component {
@@ -31,7 +31,8 @@ export default class Jobs extends React.Component {
                                     <strong>Holy guacamole!</strong> Best check yo self, you're not looking too
                                     good.
                                 </Alert>
-                            <table>
+                            <Table striped>
+                                <tbody>
                                 <tr>
                                     <th>日付</th>
                                     <th>出勤</th>
@@ -42,21 +43,21 @@ export default class Jobs extends React.Component {
                                     <th>休憩時間</th>
                                     <th>残業時間</th>
                                 </tr>
-                                
+
                                 {kintais.map(item => (
-                                <tr key={`${item.date}_row`}>
-                                    <td key={`${item.date}_date`}> {item.date}({item.dayOfWeek})</td>
-                                    <td key={`${item.date}_start`}> {item.startTime}</td>
-                                    <td key={`${item.date}_end`}> {item.endTime}</td>
-                                    <td key={`${item.date}_restStart`}> {item.restStartTime}</td>
-                                    <td key={`${item.date}_restEnd`}> {item.restEndTime}</td>
-                                    <td key={`${item.date}_workPerDay`}>{item.workPerDay} </td>
-                                    <td key={`${item.date}_restPerDay`}> {item.restPerDay}</td>
-                                    <td key={`${item.date}_overTimePerDay`}> {item.overTimePerDay}</td>
-                                </tr>
+                                    <tr key={`${item.date}_row`}>
+                                        <td key={`${item.date}_date`}> {item.date}({item.dayOfWeek})</td>
+                                        <td key={`${item.date}_start`}> {item.startTime}</td>
+                                        <td key={`${item.date}_end`}> {item.endTime}</td>
+                                        <td key={`${item.date}_restStart`}> {item.restStartTime}</td>
+                                        <td key={`${item.date}_restEnd`}> {item.restEndTime}</td>
+                                        <td key={`${item.date}_workPerDay`}>{item.workPerDay} </td>
+                                        <td key={`${item.date}_restPerDay`}> {item.restPerDay}</td>
+                                        <td key={`${item.date}_overTimePerDay`}> {item.overTimePerDay}</td>
+                                    </tr>
                                 ))}
-                                
-                            </table>
+                                </tbody>
+                            </Table>
                             <p>月の残業時間合計：　{monthOverTime} h </p>
                             </div>
                         );
