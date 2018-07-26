@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Alert} from 'react-bootstrap';
 
 // export default function Jobs({id,year,month}){
 export default class Jobs extends React.Component {
@@ -26,6 +27,10 @@ export default class Jobs extends React.Component {
                     } else {
                         return (
                             <div>
+                                <Alert bsStyle="danger">
+                                    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too
+                                    good.
+                                </Alert>
                             <table>
                                 <tr>
                                     <th>日付</th>
