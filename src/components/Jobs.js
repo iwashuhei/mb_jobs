@@ -28,7 +28,7 @@ export default class Jobs extends React.Component {
                         return (
                             <div>
                                 <Alert bsStyle="danger">
-                                    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too
+                                    <strong>BootStrapのサンプルです!</strong> Best check yo self, you're not looking too
                                     good.
                                 </Alert>
                             <Table striped>
